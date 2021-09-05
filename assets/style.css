@@ -37,8 +37,9 @@ header {
   display: flex;
 }
 
-.header nav ul li {
+.header nav ul li a {
   color: var(--light);
+  text-decoration: none;
   margin: 0px 10px 0px 10px;
   padding-bottom: 5px;
   border-bottom: 5px solid var(--light);
