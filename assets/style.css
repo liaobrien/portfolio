@@ -1,21 +1,26 @@
+:root {
+  --dark: purple;
+  --light: lavender;
+}
+
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
-.header {
+header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5px;
-  background: purple;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: var(--dark);
 }
 
 .header h1 {
-  color: purple;
-  font-size: 300%;
-  padding-left: 5%;
-  background: lavender;
+  color: var(--light);
+  font-size: 350%;
+  padding-left: 50px;
 }
 
 .header nav {
@@ -33,11 +38,10 @@
 }
 
 .header nav ul li {
-  color: lavender;
-  background: none;
+  color: var(--light);
   margin: 0px 10px 0px 10px;
   padding-bottom: 5px;
-  border-bottom: 5px solid lavender;
+  border-bottom: 5px solid var(--light);
 }
 
 #headshot {
@@ -48,16 +52,86 @@
   box-shadow: 5px 5px 5px grey;
 }
 
-.workbox img {
-  border: 5px solid purple;
+.subhead {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-/* .workbox {
-  display: flex;
-  flex: 1 0 0;
-  flex-wrap: wrap;
-  border-left: 5px solid purple;
+h3 {
+  font-size: 300%;
+  text-align: right;
 }
-.project {
-  padding-left: 30px;
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me p {
+  width: 1000px;
+  border-left: 5px solid var(--dark);
+  padding: 10px 0 10px 30px;
+  margin-left: 30px;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+}
+
+.workbox img {
+  border: 5px solid var(--dark);
+}
+
+.workbox {
+  box-sizing: content-box;
+  border-left: 5px solid var(--dark);
+  margin-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 2%;
+  width: 1000px;
+}
+/* .project {
+  border: 5px solid var(--dark);
+  width: fit-content;
+} */
+
+#first-project {
+  width: 88%;
+  margin-left: 5px;
+}
+
+.smallproj {
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 5px solid green;
+}
+
+.small-project {
+  width: 43%;
+  margin: 5px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  border-left: 5px solid var(--dark);
+}
+
+/* .contact p {
+  padding-top: 40px;
 } */
