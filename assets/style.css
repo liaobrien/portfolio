@@ -6,6 +6,11 @@
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
 }
 
 header {
@@ -14,7 +19,7 @@ header {
   justify-content: space-between;
   padding: 10px;
   margin-bottom: 10px;
-  background: var(--dark);
+  background-color: var(--dark);
 }
 
 .header h1 {
@@ -46,6 +51,7 @@ header {
 }
 
 #headshot {
+  margin: 50px;
   width: 250px;
   height: 250px;
   border: 3px solid black;
@@ -55,7 +61,8 @@ header {
 
 .subhead {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+
   align-items: center;
 }
 
@@ -87,6 +94,12 @@ h3 {
   border: 5px solid var(--dark);
 }
 
+.workbox img:hover {
+  opacity: 1;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
 .workbox {
   box-sizing: content-box;
   border-left: 5px solid var(--dark);
@@ -98,14 +111,41 @@ h3 {
   width: 1000px;
 }
 
+.proj1 {
+  position: relative;
+  display: flex;
+  margin: 2px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 30px;
+  left: 5px;
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: large;
+  padding: 10px;
+}
+
+.overlaymini {
+  background-color: var(--dark);
+  color: var(--light);
+  font-size: large;
+  padding: 10px;
+  position: absolute;
+}
+
 #first-project {
-  width: 88%;
-  margin-left: 5px;
+  width: 800px;
 }
 
 .small-project {
-  width: 43%;
-  margin: 5px;
+  width: 393px;
+}
+
+.small-project a {
+  width: 393px;
+  padding: 5px;
 }
 
 .contact {
@@ -130,7 +170,9 @@ h3 {
   flex-wrap: wrap;
 }
 
-.info ul li {
+.info ul li a {
+  color: var(--dark);
+  text-decoration: none;
   margin: 0px 70px 0px 70px;
   border-bottom: 5px solid var(--dark);
   padding-bottom: 5px;
@@ -139,3 +181,31 @@ h3 {
 /* .contact p {
   padding-top: 40px;
 } */
+
+@media screen and (max-width: 768px) {
+  header {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  .header h1 {
+    padding-left: 0px;
+  }
+  .header nav {
+    line-height: 45px;
+  }
+  .header nav ul {
+    display: block;
+    margin: 0px 10px 0px 10px;
+    text-align: center;
+    margin: auto;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  .subhead {
+    /* display: block; */
+    flex-direction: column;
+  }
+}
