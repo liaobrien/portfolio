@@ -90,16 +90,6 @@ h3 {
   justify-content: center;
 }
 
-.workbox img {
-  border: 5px solid var(--dark);
-}
-
-.workbox img:hover {
-  opacity: 1;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-
 .workbox {
   box-sizing: content-box;
   border-left: 5px solid var(--dark);
@@ -111,10 +101,16 @@ h3 {
   width: 900px;
 }
 
+.workbox img {
+  border: 5px solid var(--dark);
+  max-width: 800px;
+}
+
 .proj1 {
   position: relative;
   display: flex;
   margin: 2px;
+  flex-basis: 45%;
 }
 
 .overlay {
@@ -136,16 +132,20 @@ h3 {
 }
 
 #first-project {
-  width: 800px;
+  flex-basis: 50%;
+}
+
+.smallproj {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.smallproj a img {
+  max-width: 96%;
 }
 
 .small-project {
-  width: 393px;
-}
-
-.small-project a {
-  width: 393px;
-  padding: 5px;
+  flex-basis: 20%;
 }
 
 .contact {
@@ -234,9 +234,17 @@ h3 {
     width: 104%;
     padding-top: 20px;
   }
-
+  #first-project {
+    flex-basis: 100%;
+  }
+  .proj1 {
+    flex-basis: 100%;
+  }
   .proj1 a img {
     width: 750px;
+  }
+  .smallproj a img {
+    max-width: 100%;
   }
   .contact {
     flex-direction: column;
@@ -252,5 +260,17 @@ h3 {
   .info ul {
     display: block;
     line-height: 250%;
+    padding-left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  header {
+    width: 400px;
+  }
+  .about-me p {
+    width: 350px;
+  }
+  .proj1 a img {
+    width: 350px;
   }
 }
