@@ -1,6 +1,7 @@
 :root {
   --dark: purple;
   --light: lavender;
+  --medium: rgb(201, 149, 201);
 }
 
 * {
@@ -12,7 +13,7 @@
 body {
   margin: 0;
 }
-
+/* start of header */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -49,7 +50,7 @@ header {
   padding-bottom: 5px;
   border-bottom: 5px solid var(--light);
 }
-
+/* start of subheader */
 #headshot {
   margin: 50px;
   width: 250px;
@@ -66,11 +67,16 @@ header {
   align-items: center;
 }
 
+.subhead h2 {
+  color: var(--medium);
+}
+
 h3 {
+  color: var(--dark);
   font-size: 300%;
   text-align: right;
 }
-
+/* start of about me section */
 .about-me {
   display: flex;
   justify-content: center;
@@ -84,12 +90,12 @@ h3 {
   padding: 10px 0 10px 30px;
   margin-left: 30px;
 }
-
+/* start of work section */
 .work {
   display: flex;
   justify-content: center;
 }
-
+/* 'workbox' represents the box that contains the images themselves */
 .workbox {
   box-sizing: content-box;
   border-left: 5px solid var(--dark);
@@ -105,14 +111,14 @@ h3 {
   border: 5px solid var(--dark);
   max-width: 800px;
 }
-
+/* 'proj1' holds each image and project link */
 .proj1 {
   position: relative;
   display: flex;
   margin: 2px;
   flex-basis: 45%;
 }
-
+/* label for first project */
 .overlay {
   position: absolute;
   bottom: 30px;
@@ -122,7 +128,7 @@ h3 {
   font-size: large;
   padding: 10px;
 }
-
+/* label for smaller-sized projects */
 .overlaymini {
   background-color: var(--dark);
   color: var(--light);
@@ -134,7 +140,7 @@ h3 {
 #first-project {
   flex-basis: 50%;
 }
-
+/* 'smallproj' is the box within .workbox that holds the smaller images */
 .smallproj {
   display: flex;
   flex-wrap: wrap;
@@ -147,7 +153,7 @@ h3 {
 .small-project {
   flex-basis: 20%;
 }
-
+/* start of contact section */
 .contact {
   display: flex;
   flex-direction: row;
@@ -171,17 +177,14 @@ h3 {
 }
 
 .info ul li a {
-  color: var(--dark);
+  color: var(--medium);
   text-decoration: none;
   margin: 0px 70px 0px 70px;
   border-bottom: 5px solid var(--dark);
   padding-bottom: 5px;
 }
 
-/* .contact p {
-  padding-top: 40px;
-} */
-
+/* adaptations made for ipad viewport */
 @media screen and (max-width: 768px) {
   * {
     text-align: center;
@@ -263,6 +266,8 @@ h3 {
     padding-left: 0;
   }
 }
+
+/* adaptations made for iphone viewport */
 @media screen and (max-width: 375px) {
   header {
     width: 400px;
