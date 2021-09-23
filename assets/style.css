@@ -1,5 +1,5 @@
 :root {
-  --dark: purple;
+  --dark: rgb(53, 11, 77);
   --light: lavender;
   --medium: rgb(201, 149, 201);
 }
@@ -19,7 +19,6 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px;
-  margin-bottom: 10px;
   background-color: var(--dark);
 }
 
@@ -51,24 +50,26 @@ header {
   border-bottom: 5px solid var(--light);
 }
 /* start of subheader */
-#headshot {
-  margin: 50px;
-  width: 250px;
-  height: 250px;
-  border: 3px solid black;
-  border-radius: 100%;
-  box-shadow: 5px 5px 5px grey;
+#hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../assets/images/hero.jpg");
+
+  /* Set a specific height */
+  height: 200%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 200px 0 200px 0;
 }
 
-.subhead {
-  display: flex;
-  justify-content: center;
-
-  align-items: center;
-}
-
-.subhead h2 {
+h2 {
   color: var(--medium);
+  text-align: center;
+  font-size: 250%;
+  text-shadow: 1px 1px 3px white;
 }
 
 h3 {
