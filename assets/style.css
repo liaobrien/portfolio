@@ -1,7 +1,7 @@
 :root {
   --dark: rgb(53, 11, 77);
   --light: lavender;
-  --medium: rgb(201, 149, 201);
+  --medium: rgb(182, 149, 201);
 }
 
 * {
@@ -87,68 +87,33 @@ h3 {
   padding: 10px;
 }
 /* start of work section */
+
 .work {
-  display: flex;
-  justify-content: center;
+  margin: 2% 20% 0 20%;
+  width: 1000px;
 }
+
 /* 'workbox' represents the box that contains the images themselves */
 .workbox {
   box-sizing: content-box;
-  border-left: 5px solid var(--dark);
-  margin-left: 30px;
+  border-top: 5px solid var(--dark);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   padding-left: 2%;
-  width: 900px;
 }
 
-.workbox img {
-  border: 5px solid var(--dark);
-  max-width: 800px;
+.card {
+  margin: 1%;
+  border: 2px solid var(--dark);
+  background-color: var(--medium);
 }
-/* 'proj1' holds each image and project link */
-.proj1 {
-  position: relative;
-  display: flex;
-  margin: 2px;
-  flex-basis: 45%;
-}
-/* label for first project */
-.overlay {
-  position: absolute;
-  bottom: 30px;
-  left: 5px;
-  background-color: var(--dark);
+
+.btn {
   color: var(--light);
-  font-size: large;
-  padding: 10px;
-}
-/* label for smaller-sized projects */
-.overlaymini {
   background-color: var(--dark);
-  color: var(--light);
-  font-size: large;
-  padding: 10px;
-  position: absolute;
 }
 
-#first-project {
-  flex-basis: 50%;
-}
-/* 'smallproj' is the box within .workbox that holds the smaller images */
-.smallproj {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.smallproj a img {
-  max-width: 96%;
-}
-
-.small-project {
-  flex-basis: 20%;
-}
 /* start of contact section */
 .contact {
   display: flex;
