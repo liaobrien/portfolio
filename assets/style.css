@@ -54,11 +54,7 @@ header {
 #hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../assets/images/hero.jpg");
-
-  /* Set a specific height */
   height: 200%;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,7 +66,7 @@ h2 {
   color: var(--medium);
   text-align: center;
   font-size: 250%;
-  text-shadow: 1px 1px 3px white;
+  text-shadow: 0 0 10px white;
 }
 
 h3 {
@@ -96,21 +92,63 @@ h3 {
 .workbox {
   box-sizing: content-box;
   border-top: 5px solid var(--dark);
-  display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-left: 2%;
+  padding: 1%;
 }
 
-.card {
-  margin: 1%;
-  border: 2px solid var(--dark);
-  background-color: var(--medium);
+.main-project {
+  border: 1px solid black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/pack-rat.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  max-width: 1000px;
+  height: 350px;
 }
 
-.btn {
-  color: var(--light);
-  background-color: var(--dark);
+.small-project {
+  border: 1px solid black;
+  max-width: 480px;
+  height: 175px;
+  margin: 8px;
+}
+
+.sm1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/weather-dashboard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.sm2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/work-day-planner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin-left: -15px;
+}
+
+.proj:hover .overlay {
+  opacity: 1;
 }
 
 /* start of contact section */
@@ -176,10 +214,8 @@ h3 {
   }
   .about-me p {
     display: flex;
-    width: 750px;
     border-left: 0px;
     border-top: 5px solid var(--dark);
-    margin-top: 20px 0 0 0;
   }
   .work {
     flex-direction: column;
@@ -192,19 +228,12 @@ h3 {
     width: 104%;
     padding-top: 20px;
   }
-  #first-project {
-    flex-basis: 100%;
-  }
-  .proj1 {
-    flex-basis: 100%;
-  }
-  .proj1 a img {
-    width: 750px;
-  }
-  .smallproj a img {
-    max-width: 100%;
+  .main-project {
+    max-width: 380px;
+    height: 175px;
   }
   .contact {
+    margin: auto;
     flex-direction: column;
   }
   .contact .info {
@@ -212,7 +241,6 @@ h3 {
     text-align: center;
     justify-content: space-around;
     margin: 0;
-    border-left: 0;
     border-top: 5px solid var(--dark);
   }
   .info ul {
@@ -224,13 +252,4 @@ h3 {
 
 /* adaptations made for iphone viewport */
 @media screen and (max-width: 375px) {
-  header {
-    width: 400px;
-  }
-  .about-me p {
-    width: 350px;
-  }
-  .proj1 a img {
-    width: 350px;
-  }
 }
