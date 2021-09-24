@@ -12,6 +12,7 @@
 
 body {
   margin: 0;
+  background-color: var(--light);
 }
 /* start of header */
 header {
@@ -75,21 +76,15 @@ h2 {
 h3 {
   color: var(--dark);
   font-size: 300%;
-  text-align: right;
 }
 /* start of about me section */
 .about-me {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: -17px;
+  margin: 2% 20% 0 20%;
 }
 
 .about-me p {
-  width: 1000px;
-  border-left: 5px solid var(--dark);
-  padding: 10px 0 10px 30px;
-  margin-left: 30px;
+  border-top: 5px solid var(--dark);
+  padding: 10px;
 }
 /* start of work section */
 .work {
