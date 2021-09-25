@@ -53,7 +53,7 @@ header {
 /* start of subheader */
 #hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../assets/images/hero.jpg");
+    url("../images/hero.jpg");
   height: 200%;
   background-position: center;
   background-repeat: no-repeat;
@@ -99,8 +99,8 @@ h3 {
 
 .main-project {
   border: 1px solid black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/images/pack-rat.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/pack-rat.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -116,16 +116,16 @@ h3 {
 }
 
 .sm1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/images/weather-dashboard.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/weather-dashboard.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
 
 .sm2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/images/work-day-planner.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/work-day-planner.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
