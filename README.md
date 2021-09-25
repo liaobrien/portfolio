@@ -1,6 +1,6 @@
 # portfolio
 
-This is a work-in-progress version of my developer portfolio. This will serve as a starting point for where I will host links to my deployed applications to show potential employers.
+This is my official developer portfolio, where I will host links to my deployed applications to show potential employers.
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ This page can be accessed and used on any standard web browser.
 
 ## Credits
 
-CSS-Trick's [complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) was an immense help to me as I built my web page.
+CSS-Trick's [complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) was an immense help to me as I built my web page. CSS framework Bootstrap is also being utilized.
 
 ## License
 
