@@ -97,68 +97,10 @@ h3 {
   background-color: var(--medium);
 }
 
-/* 'workbox' represents the box that contains the images themselves */
-/* .workbox {
-  box-sizing: content-box;
-  border-top: 5px solid var(--dark);
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding: 1%;
+.btn {
+  background-color: var(--dark);
+  color: var(--light);
 }
-
-.main-project {
-  border: 1px solid black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/pack-rat.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  max-width: 1000px;
-  height: 350px;
-}
-
-.small-project {
-  border: 1px solid black;
-  max-width: 480px;
-  height: 175px;
-  margin: 8px;
-}
-
-.sm1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/weather-dashboard.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.sm2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/work-day-planner.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-  margin-left: -15px;
-}
-
-.proj:hover .overlay {
-  opacity: 1;
-} */
 
 /* start of contact section */
 .contact {
