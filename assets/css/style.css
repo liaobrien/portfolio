@@ -107,26 +107,16 @@ h3 {
   margin: 2% 20% 0 20%;
 }
 
-.contact .info {
-  width: 1000px;
-  display: inline-flex;
-  justify-content: space-between;
-  border-top: 5px solid var(--dark);
-  padding: 5% 0 5% 0;
-}
-
-.info ul {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.info ul li a {
-  color: var(--dark);
-  text-decoration: none;
-  margin: 0px 70px 0px 70px;
+#contact-header {
   border-bottom: 5px solid var(--dark);
   padding-bottom: 5px;
+}
+
+.info p a {
+  color: var(--dark);
+  border-bottom: 5px solid var(--dark);
+  padding-bottom: 5px;
+  text-decoration: none;
 }
 
 /* adaptations made for ipad viewport */
@@ -183,21 +173,9 @@ h3 {
     max-width: 380px;
     height: 175px;
   }
-  .contact {
-    margin: auto;
+  .info {
     flex-direction: column;
-  }
-  .contact .info {
-    width: fit-content;
-    text-align: center;
-    justify-content: space-around;
-    margin: 0;
-    border-top: 5px solid var(--dark);
-  }
-  .info ul {
-    display: block;
     line-height: 250%;
-    padding-left: 0;
   }
 }
 
